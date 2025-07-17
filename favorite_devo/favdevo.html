@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Favorite Devotionals</title>
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="header-image">
+        <h1>My Favorite<br>Devotionals</h1>
+      </div>
+    </header>
+    <main>
+      <div class="content-box">
+        <!-- Add your devotional content here -->
+        <table>
+          <thead>
+            <tr>
+              <td>Speaker</td>
+              <td>Title</td>
+              <td>Location</td>
+              <td>Year</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Bonnie Brinton Anderson</td>
+              <td><a href="https://speeches.byu.edu/talks/bonnie-brinton-anderson/cybersecurity-and-spiritual-safety/" target="blank">Cybersecurity and Spiritual Safety</a></td>
+              <td>BYU-Provo</td>
+              <td>December 8th, 2015</td>
+            </tr>
+            <tr>
+              <td>Jeffrey R. Holland</td>
+              <td><a href="https://speeches.byu.edu/talks/jeffrey-r-holland/remember-lots-wife/" target="blank">Remember Lot's Wife</a></td>
+              <td>BYU-Provo</td>
+              <td>January 13, 2009</td>
+            </tr>
+            <tr>
+              <td>Dale G. Renlund</td>
+              <td><a href="https://speeches.byu.edu/talks/dale-g-renlund/stronger-and-closer-connection-to-god-through-multiple-covenants/" target="blank">Stronger and Closer Connection to God Through Multiple Covenants</a></td>
+              <td>BYU-Provo</td>
+              <td>March 5, 2024</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>Don't see your favorite? Add it using the form below!</h3>
+        <form>
+          <label id="speaker-label" for="speaker">Speaker:</label>
+          <input type="text" id="speaker" name="speaker" required>
+          <br>
+          <label id="title-label" for="title">Title:</label>
+          <input type="text" id="title" name="title" required>
+          <br>
+          <label id="location-label" for="Location">Location:</label>
+          <input type="text" id="location" name="location" required>
+          <br>
+          <label id="year-label" for="year">Year:</label>
+          <input type="text" id="year" name="year" required>
+          <br>
+          <input id="submit-button" type="submit"></input>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

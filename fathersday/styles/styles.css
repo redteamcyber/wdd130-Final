@@ -1,0 +1,40 @@
+/* Add your CSS here to style your father's day page */
+body{
+    background: linear-gradient(to bottom, lightgray, #E16907)
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px; /* space between list items */
+    width: 100%;
+    justify-content: space-evenly;
+    color: #191B0D;
+    font-size: 1.5em;
+    background: linear-gradient(to bottom, lightgray, lightslategray);
+}
+
+main{
+    display: grid;
+}
+
+main img{
+    width: 600px;
+    height: 898px;
+    border: solid 10px #191B0D;
+    justify-self: center;
+}
+h1{
+    color: #6A3201;
+    text-align: center;
+    background: linear-gradient(to bottom, lightslategray, lavender);
+    height: 45px;
+}
+
+section{
+    border: solid 2px #191B0D;
+    margin: 20px;
+    padding: 10px;
+}

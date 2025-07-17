@@ -1,0 +1,434 @@
+<!--Header-->
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header{
+    background-color: #3a5a4d;
+    height: 250px;
+    display: grid;
+    grid-template-rows: 20% 80%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+header img{
+    height: 200px;
+    width: 200px;
+    border: solid 2px #bba772;
+    margin: 20px;
+    grid-row: 1 / 2;
+    grid-column: 1;
+}
+
+h1{
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+    color: #dad7cd;
+    text-decoration: underline;
+}
+
+h2{
+    text-align: center;
+    grid-row: 2;
+    grid-column: 2;
+    color: #dad7cd;
+}
+
+nav{
+    background-color: #7aa27f;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+nav a{
+    color:white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+    padding: 0 30px;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover{
+    background-color: #578277 ;
+    color: #dad7cd;
+    height: auto;
+    text-align: center;
+}
+
+<!--Index Page-->
+
+main{
+    background-color: #cbffc2;
+}
+
+div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    margin-top: 30px;
+}
+
+#first{
+    background-color: #7aa27f;
+    grid-column: 1;
+    grid-row: 30% 30% 30%;
+    margin: 40px;
+    height: 400px;
+    border: solid 3px black;
+    height: 368px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+}
+
+#book_of_mormon{
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: solid 5px black;
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-column: 1;
+}
+
+#first p{
+    grid-column: 2;
+    grid-row: 1;
+    margin: 20px;
+}
+
+#second{
+    background-color: #7aa27f;
+    grid-column: 2;
+    grid-row: 1;
+    margin: 40px;
+    height: 368px;
+    border: solid 3px black;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 30% 70%;
+    align-items: space-evenly;
+}
+
+#russell_nelson{
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: solid 5px black;
+    margin-left: 10px;
+    margin-top: 10px;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#jeffrey_holland{
+    height: 150px;
+    width: 150px;
+    border-radius: 20%;
+    border: solid 5px black;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#nelson-quote{
+    grid-row: 1;
+    grid-column: 2;
+    margin-left: 10px;
+}
+
+#holland-quote{
+    grid-row: 2;
+    grid-column: 2;
+    margin: 10px;
+}
+
+
+table{
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+td{
+    border: solid 3px #bba772;
+}
+
+th{
+   border: solid 3px #bba772;
+   background-color: #7aa27f 
+}
+
+table tr:nth-child(odd) {
+    background-color: #dad7cd;
+  }
+
+table tr:nth-child(even) {
+    background-color: #578277;
+}
+
+table a{
+    color: black;
+}
+
+
+#bio{
+    color: #dad7cd;
+}
+
+#ice-grid{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    height: 500px;
+}
+
+.ice{
+    height: 100px;
+    width: 200px;
+    border: 3px solid black;
+    background-color: #3a5a4d;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ice:hover{
+    background-color: #7aa27f;
+    font-size: 1.5em;
+}
+
+#prophet-cards a{
+    color: #dad7cd;
+    grid-row: 1;
+    grid-column: 1;
+}
+
+#apostle a{
+    color: #dad7cd;
+    grid-row: 1;
+    grid-column: 2;
+}
+#devotional a{
+    color: #dad7cd;
+    grid-row: 1;
+    grid-column: 3;
+}
+#flag a{
+    color: #dad7cd;
+    grid-row: 2;
+    grid-column: 1;
+}
+
+#father a{
+    color: #dad7cd;
+    grid-row: 2;
+    grid-column: 2;
+}
+#positioning a{
+    color: #dad7cd;
+    grid-row: 2;
+    grid-column: 3;
+}
+
+#gallery a{
+    color: #dad7cd;
+}
+
+#gallery{
+    grid-row: 3;
+    grid-column: 1;
+}
+
+#signup{
+    grid-row: 3;
+    grid-column: 2;
+}
+
+#signup a{
+    color: #dad7cd;
+}
+
+footer {
+  margin-top: 30px;
+  background-color: #3a5a4d;
+  width: 100%;
+  height: 250px;
+  color: #dad7cd;
+  display: grid;
+  grid-template-rows: (1fr 1fr);
+  justify-content: center;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 40px;
+    margin-left: -40px;
+}
+ul li a{
+    color: #dad7cd;
+    display: flex;
+}
+
+ul li a:hover{
+    background-color: #578277 ;
+    color: #dad7cd;
+    height: auto;
+    text-align: center;
+}
+
+.social{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 40px;
+    grid-row: 2;
+}
+
+.social img{
+    height: 100px;
+    width: 100px;
+    border-radius: 10%;
+}
+.social a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -50px;
+}
+
+footer p{
+    display: flex;
+    justify-self: center;
+}
+
+
+form{
+    background: #dad7cd;
+    padding: 10px;
+    border: 3px dotted black;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-row-gap: 7px;
+    height: 15px;
+    overflow: hidden;
+    transition: height 0.75s ease-out;
+}
+
+form:hover{
+    height: 200px;
+    transition: height .85s ease-in;
+}
+
+form h3{
+    grid-row: 1;
+    grid-column: 1 / 3;
+    margin-top: -6px;
+    display: flex;
+    justify-self: center;
+}
+
+#name{
+    grid-column: 2;
+    grid-row: 2;
+    width: 300px;
+}
+
+#email{
+    grid-column: 2;
+    grid-row: 3;
+    width: 300px;
+}
+
+#number{
+    grid-column: 2;
+    grid-row: 4;
+    width: 300px;
+}
+
+#submit{
+    grid-column: 2;
+    grid-row: 5;
+    margin-top: 10px;
+    width: 308px;
+}
+
+#submit:hover{
+    background-color: #578277;
+}
+
+#name-label{
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    justify-content: center;
+}
+
+#email-label{
+    grid-column: 1;
+    grid-row: 3;
+    display: flex;
+    justify-content: center;
+}
+
+#phone-label{
+    grid-column: 1;
+    grid-row: 4;
+    display: flex;
+    justify-content: center;
+}
+
+#profile{
+    width: 150px;
+    height: 200px;
+}
+
+
+#about_main{
+    display: flex;
+    justify-content: center;
+}
+
+#biography{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20% 80%;
+    background-color: #578277;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+#about_h1{
+    grid-column: 1;
+}
+
+#profile{
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border: 3px solid #dad7cd;
+    border-radius: 10px;
+    align-self: center;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#personal_info{
+    align-self: center;
+    margin: 30px;
+    grid-column: 2;
+    grid-row: 2;
+}

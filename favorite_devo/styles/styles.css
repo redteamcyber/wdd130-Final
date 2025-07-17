@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  height: 100%;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #d3d3d3, #001f3f);
+  background-repeat: no-repeat; /* Just in case */
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.header-image {
+  background-image: url('../images/icenter.png'); /* Replace with your image */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+
+}
+
+.header-image h1 {
+  margin: 0;
+  line-height: 0.9;
+    font-size: 3.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #00000055;
+}
+
+.content-box {
+  background-color: white;
+  margin: 30px auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 40px;
+  box-shadow: 5px 5px 0px black;
+  min-height: 400px;
+}
+
+table{
+  border: solid black 3px;
+}
+
+table thead{
+  background-color: slateblue;
+}
+
+tr:nth-child(even){
+  background-color: slategray;
+}
+
+table td{
+  border: solid black 3px;
+}
+
+form{
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 10px;
+  border: dotted slategray 2px;
+  padding: 20px;
+  background-color: slategray;
+  justify-content: center;
+}
+
+#speaker{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#speaker-label{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#title{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#title-label{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+#location{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#location-label{
+  grid-column: 1;
+  grid-row: 3;
+}
+
+#year{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+#year-label{
+  grid-column: 1;
+  grid-row: 4;
+}
+
+#submit-button{
+  grid-column: 2;
+  grid-row: 5;
+  width: 50%;
+  justify-self: center;
+}
+
+#submit-button:hover{
+  background-color: forestgreen;
+}
+
+

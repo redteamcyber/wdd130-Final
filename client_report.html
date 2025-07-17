@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+    document.addEventListener("DOMContentLoaded", function(){
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header").innerHTML = data;
+            })
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("footer").innerHTML = data
+            })
+        })
+    </script>
+    <h2>Client Report</h2>
+    <p>How did you decide what content and images to use for your site plan?
+        - Once I knew the direction I wanted to take the project, which was to make a memory
+        page for my mission, I broke it into three important sections, the most
+        meaningful parts of my mission: fun stories, companions, and baptisms. From there
+        I found pictures of all my companions, my baptisms, and a few fun stories from the
+        home page.</p>
+
+    <p>How did you communicate with your developer? Was there any issues with communication?
+        - We communicated larger over text. He would report to me when parts of the website had
+        been completed by the developers, and I would look them over and let him know what I thought,
+        changes that could be made, and it all worked great. There were no communication issues.</p>
+
+    <p>Did your developer meet your expectations for your site?
+        - He absolutely did! I love the way he did the colors and the styles, for me it really fit 
+        the vibe of my mission and it really made me happy seeing all those memories in one place
+        to remember and look back on those good times.</p>
+
+    <p>What will you do differently next time you hire a team to do a project for you?
+        - Next time I'll find a different way to draw up my wireframe, it worked out fine in the end
+        but there were a few things that I needed to clarify because those things were hard to include 
+        clearly in the wireframe. Next time I think i'll use a word document or a google drawing or something
+    </p>
+
+    <h2>Lead Developer Report</h2>
+    <p>How did you manage your development team and comunicate the tasks for your junior devs?
+        - We started by making a group chat for our team, and from then I would send assignments
+        there, and my junior developers asked questions and coordinated putting everything together.
+        We had one point where there was an option to get photos of all of us for the about us page, so we
+        sent pictures into that chat so Cody could get his work done before his wisdom teeth extraction</p>
+
+    <p>How did you communicate with your client? Was there any issues?
+        - My client was Parker Dragovich. Communication was quite easy, we exchanged phone numbers and 
+        I sent him updates during the project so he could give us feedback. When I had questions, it was 
+        super easy to go ask him. There were no communication issues.</p> 
+
+    <p>How did you handle publishing your clients site and sharing it with the client?
+        - Publishing the site was really easy, I made sure to communicate to my junior devs
+        to be sure to pull the origin before making edits and all went well. I sent Parker the link to the 
+        live website so he could give us feedback, and all was great.</p>
+
+    <p>How was your experience with managing your site with GitHub?
+        - I touched on this a bit in the last question, but we did not have any problems with losing data 
+        from the sites. I stressed to Hunter and Cody the importance of pushing and pulling the origins
+        at the right time to github, and we got through without any issues. It was a great success.
+    </p>
+
+    <h2>Junior Developer Report</h2>
+    <p>How did you communicate with your team lead? Was there any issues?
+        - I communicated with my team leads through email. It was pretty easy with Einar, he was really on top of it.
+        The only difficulty I can think of came near the end when one of my emails didn't make it to him. I would have much rather
+        had a group chat but the consensus was that my leads didn't want to do that. It seemed like there was a lack of active communication
+        between me and Jacob, but it worked out fine, the websites turned out great. Overall exchanging numbers is a better idea.</p>
+
+    <p>Did you know what was expected of you for each site?
+        - Yes! The responsibilities were mostly clear for each site. Near the end of the site we did for Angelique, the wireframe just kind
+        of ended, but it wasn't too bad because I just followed the set pattern and it worked great. The only other thing that was unclear
+        was the two webpages that I had to take over on the skinner project. After looking it over though it got cleared up.</p>
+
+    <p>Were you able to contribute to your sites?
+        - Absolutely! I feel good about what I contributed to each site.</p>
+
+    <p>Did you run into any issues with GitHub and adding your changes to the sites?
+        - Nope! Everything worked great, we focused a lot on making sure nothing got deleted when pushing changes to github.
+    </p>
+
+    <h2>Overall Experience Report</h2>
+    <p>What was the most challenging part of this project for you? Were you able to overcome it?
+        - I think the most challenging part of this project was balancing each project, making sure each one got
+        the attention it needed and that I was communicating with all 4 teams I was a part of. What I did to overcome it
+        was keep an open directory in VS Code so I wouldn't forget about one of the sites. Also every time I took down a contact
+        I labeled it with the directory name to stay organized.</p>
+
+    <p> What did you enjoy most about this project?
+        - I enjoyed most seeing different ideas from different clients and developers come together to put a vision onto
+        the screen, that was really cool to see how efficiently one team can work to build a site.</p>
+
+    <p>What would you do differently if you could do the project again?
+        - I think I would have spent more time meeting with my group outside of class. I think if we had at least had a few calls
+        in between class time to coordinate our work then that would have made it more efficient.</p> 
+
+    <p>Do you feel more confident in working on real-world projects after this experience? Explain.
+        - I definitely do to an extent! I was thinking about the group format and how this would help us prepare
+        for the real world. Given also that we would likely be a part of one time instead of four at a time, I feel confident
+        that I can jump into a team environment and perform within the framework. Teamwork has always been a talent of mine, and
+        I'm excited to experience working with a team more to complete projects like this. 
+    </p>
+    <div id="footer"></div>
+</body>
+</html>

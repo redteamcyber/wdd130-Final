@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+            display: flex;
+            justify-content: center;
+        }
+
+        #formContainer{
+            border: solid darkblue 10px;
+            background-color: white;
+            height: 715px;
+            width: 570px;
+            border-radius: 30px;
+            margin-top: 20px;
+        }
+
+        header{
+            background-image: url(images/jesus_feeds_5000.jpeg);
+            background-size: cover;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            height: 260px;
+            width: 570px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+        }
+
+        h1, h2{
+            color: white;
+            text-shadow: 2px 2px black;
+            text-align: center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        h1{
+            margin-bottom: 15px;
+        }
+
+        h2{
+            margin-bottom: 40px;
+            font-size: 22px;
+        }
+
+        #closeBtn{
+            height: 20px;
+            width: 30px;
+            top: 40px;
+            left: 400px;
+            position: absolute;
+            z-index: 10;
+        }
+
+        #myForm{
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        h3{
+            grid-column: 1 / 4;
+            grid-row: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        #label-username{
+            grid-row: 2;
+            grid-column: 1;
+            margin-left: 20px;
+        }
+
+        #username{
+            grid-row: 2;
+            grid-column: 3;
+            height: 15px;
+            margin-bottom: 5px;
+            margin-right: 20px;
+        }
+
+        #label-password{
+            grid-row: 3;
+            grid-column: 1;
+            margin-left: 20px;
+        }
+
+        #password{
+            grid-row: 3;
+            grid-column: 3;
+            height: 15px;
+            margin-bottom: 5px;
+            margin-right: 20px;
+        }
+
+        #label-email{
+            grid-row: 4;
+            grid-column: 1;
+            margin-left: 20px;
+        }
+
+        #email{
+            grid-row: 4;
+            grid-column: 3;
+            height: 15px;
+            margin-right: 20px;
+        }
+
+        #gender{
+            grid-row: 5;
+            grid-column: 1;
+            margin-left: 20px;
+        }
+
+        #gender-radio{
+            grid-row: 5;
+            grid-column: 3;
+        }
+
+        #section-newsletter{
+            grid-row: 6;
+            grid-column: 2;
+        }
+
+        #section-conditions{
+            grid-row: 7;
+            grid-column: 2;
+        }
+
+        #submit{
+            grid-row: 8;
+            grid-column: 2;
+            display: flex;
+            justify-self: center;
+            height: 25px;
+            margin-top: 10px;
+        }
+
+        #scripture-div{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-gap: 5px;
+            margin-top: 20px;
+        }
+
+        .scripture{
+            width: 110px;
+            height: 150px;
+        }
+
+        #old-testament{
+            border-bottom-left-radius: 20px;
+        }
+
+        #pearl-of-great-price{
+            border-bottom-right-radius: 20px;
+        }
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div id="formContainer">
+        <header>
+            <button type="button" id="closeBtn">X</button>
+            <h1>Daily Feed</h1>
+            <h2>Scripture a Day</h2>
+        </header>
+        <form id="myForm">
+            <h3>Sign Up for Daily Scripture Feed</h3>
+            <label id="label-username" for="username">User Name:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label id="label-password" for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label id="label-email" for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label id="gender">Gender:</label>
+            <div id="gender-radio">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Female</label>
+            </div>
+
+            <section id="section-newsletter">
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section id="section-conditions">
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section id="submit">
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+        <div id="scripture-div">
+            <img class="scripture" id="old-testament" src="images/old_testament.webp" alt="Old Testament">
+            <img class="scripture" id="new-testament" src="images/new_testament.webp" alt="New Testament">
+            <img class="scripture" id="book-of-mormon" src="images/book_of_mormon.webp" alt="Book of Mormon">
+            <img class="scripture" id="doctrine-and-covenants" src="images/doctrine_and_covenants.webp" alt="Doctrine and Covenants">
+            <img class="scripture" id="pearl-of-great-price" src="images/pearl_of_great_price.webp" alt="Pearl of Great Price">
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>
